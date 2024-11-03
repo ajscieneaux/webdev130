@@ -1,5 +1,5 @@
 :root {
-    --heading-background-color:#f06;
+    --heading-background-color:rgb(60, 0, 255);
     --heading-text-color:#333;
     --heading-font: 'Montserrat', Helvetica, sans-serif;
     --padding: 1rem;
@@ -27,6 +27,7 @@ img {
     border: 1px sold black;
     padding: 2px;
     box-shadow:  0 0 30px gray;
+    
 }
 
 p {

@@ -1,11 +1,11 @@
-/* img{
+img{
     width: 100%;
     height: auto;
 }
 
 body{
     background-color: lightblue;
-} */
+}
 
 * {
 	margin: 0;
@@ -16,6 +16,7 @@ main {
 	max-width: 800px;
 	margin: 2rem auto;
 	font-family: Roboto, Arial, sans-serif;
+	
 }
 
 h2 {
