@@ -28,9 +28,10 @@
 body {
     font-family: var(--text-font);
     font-weight: 400;  
-    /* max-width: 960px; */
+    max-width: 75%;
     /* margin: 0 auto; */
-    /* padding: 4em; */
+    /* left: 200px; */
+    padding: 1em;
     text-align: center;
   }
 
@@ -118,7 +119,7 @@ footer nav a {
 
 /* Make sure image fills the container it is in */
 .hero img{
-    display:block;
+    /* display:block; */
     width: 100%;
     height: auto;
 }
@@ -136,15 +137,16 @@ footer nav a {
 
 .hero article {
     position: absolute;
-    width: 35%;
-    top: 35%;
-    left: 65%;
+    width: 75%;
+    bottom: 2%;
+    right: 5px;
     color: var(--primary-color);
     background-color:  rgba(255,255,255,0.5);
-
 }
 
 .hero-image{
+    width: 30%;
+    height:auto;
     float: right;
 }
   
