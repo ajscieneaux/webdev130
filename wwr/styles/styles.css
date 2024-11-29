@@ -1,8 +1,7 @@
 
 /* color pallette from coolors.com https://coolors.co/dad7cd-a3b18a-588157-3a5040-344e41 
     timberwolf, sage, fern green, feldgrau, and brunswick green*/
-
-    
+ 
 :root {
     /* --heading-background-color:rgb(60, 0, 255); */
     /* --heading-text-color:#333; */
@@ -80,6 +79,7 @@ img {
 p {
     padding: 10px
 }
+
 
 
 /* CLASS SELECTORS */
