@@ -36,7 +36,7 @@ body {
   }
 
 header {
-    padding: 1em;
+    padding: 2px;
     text-align: center;
     color: var(--primary-color);
     background-color: var(--primary-color);
@@ -75,9 +75,7 @@ p {
 nav {
     background-color: var(--primary-color); 
     display: inline;
-    padding: 10px;
-    margin: 0, 0, 0, 15px;
-    line-height: 3em;
+    line-height: 2em;
     text-align: center;
     font-size: 1.2em;
     justify-content: space-around;
@@ -94,16 +92,41 @@ nav a {
 
 /* set up styling for footer area */
 footer {
-    margin-top: 5px;
+    /* height: 1px; */
     text-align: left;
+    display:inline;
+    color: var(--accent3-color);
     background-color: var(--primary-color);
+
 }
-footer p{
+footer nav {
     background-color: var(--primary-color);
+    display:inline;
+    line-height: 2em;
+    text-align: center;
+    font-size:1em;
+    justify-content: space-around;
+    /* background-color: red; */
     color: var(--accent3-color);
 }
+
 footer nav a {
+    background-color: var(--primary-color); 
+    color: var(--accent2-color);
+    display: right;
+    padding: 5px;
     text-decoration: none;
+}
+footer nav p {
+    color: var(--accent3-color);
+    background-color: var(--primary-color); 
+    text-align: left;
+
+}
+
+footer img{
+    display: inline;
+    /* float: right; */
 }
 
 
