@@ -16,8 +16,13 @@ body{
     font-size:16px;font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+header, .grid, footer {
+    max-width: 840;
+    margin: 0 auto;
+}
+
 main{
-    max-width: 800px;
+    /* max-width: 800px; */
     padding: 10px;
     /* background-color: lightblue ; */
 }
@@ -26,22 +31,33 @@ nav {
     /* background-color: var(--heading-background-color); darkblue; */
     background-color: darkblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     /* color: white; */
     color: white;
-    display: inline;
+    display: block;
+    text-decoration: none; /*w4*/
     padding: 10px;
+    font-size: 1 rem;
+    font-weight: 500;
 }
 
 h1 {
     /* color: var(--heading-background-color); darkblue; */
     color: darkblue;
     padding: .5rem;
+    border-bottom: 2px solid ;
 }
 
 main img {
+    /*w4*/
+    grid-column: 2/3;
+    margin:0% 1rem;
+
     width: 200px;
     height: auto;
     border: 1px solid black;
@@ -57,9 +73,14 @@ p {
 }
 
 aside{
-    width: 25rem;
+    width: 20rem;
     text-align: center; 
     position: relative;
+
+    /*w4*/
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     /* 
     margin: 1rem;
     border: 5px solid rgba(68, 8, 128, 0.2);
@@ -75,13 +96,13 @@ aside img{
 }
 
 aside h2{
-    position:absolute;
+    position: absolute;
     top:25px;
-    left: 100px;
+    left: 60px;
 }
 
 footer{
-    margin-top: 5px;
+    /* margin-top: 5px; */
     border-top: 1px dashed #1a0870 ;
     text-align: center;
 }
@@ -116,4 +137,10 @@ ul.ulstyle1 {
 
 .indent{
     padding-left: 2rem;
+}
+
+/*w4*/
+.grid{
+    display: grid;
+    align-items: center;
 }

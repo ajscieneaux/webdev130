@@ -132,7 +132,7 @@ footer img{
 
 
 /* CLASS SELECTORS */
- .hero {
+.hero {
 	margin: 10px auto;
 	position: relative; 
     max-width: 600px;
@@ -150,8 +150,7 @@ footer img{
 
 /* hero class heading */
 .hero h1 {
-    text-align: top;
-    vertical-align: center;
+    vertical-align: middle;
     position: absolute;
     top: 3%;
     left: 28%;
@@ -178,7 +177,7 @@ footer img{
     background-color: rgba(255,255,255,0);
 }
 
-/* color schemes*/
+/* font schemes*/
 .roboto-thin {
     font-family: "Roboto", serif;
     font-weight: 100;

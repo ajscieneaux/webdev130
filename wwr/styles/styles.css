@@ -4,9 +4,9 @@
  
 :root {
     /* --heading-background-color:rgb(60, 0, 255); */
-    /* --heading-text-color:#333; */
+    /* --heading-text-color:#333;  */
     --padding: 1rem;    
-    --border: 1px dolid rgba(0,0,0,0.1);
+    --border: 1px solid rgb(0 0 0 / 0.1);
 
     /* --heading-font: 'Montserrat', Helvetica, sans-serif; */
     --heading-font: 'Knewave', Helvetica, sans-serif;
