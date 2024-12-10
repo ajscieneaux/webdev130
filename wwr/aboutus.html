@@ -16,11 +16,14 @@
     <!-- W1 Adding a header for my page -->  
     <header>
       <img src="images/wwr.png" alt="Logo" width="100">
-      <nav>
-          <a href="index.html">Home</a> 
-          <a href="trips.html">Trips</a>
-          <a href="#">About Us</a>
-          <a href="contactus.html">Contact Us</a>
+      <!-- w4  Use CSS Flex to create the horizontal layout in the nav. -->
+      <nav >        
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
       </nav>
     </header>
     
@@ -53,19 +56,65 @@
         <!-- W3 History section -->
         <section>
           <h2>History</h2>
-          <p><strong> WhiteWater Rafting Company was founded in 1998.
-            A p element with a brief history of the company. 
-            It is OK to use nonsense language.</strong></p>
+          <!-- w4 - put items in a flex container so can have 2 paragraphs with a picture between them. -->
+          <div class ="flexbox-container">
+            <div class = "flexbox-item">
+              <p><strong> WhiteWater Rafting Company was founded in 1998.
+                A p element with a brief history of the company. 
+                It is OK to use nonsense language.</strong></p>
+            </div>
+            <div class = "flexbox-item">
+              <img src="images/rafting58_600.jpg" alt="background" width ="150"> 
+            </div>
+            <div class = "flexbox-item">
+              <p><strong> WhiteWater Rafting Company was founded in 1998.
+                A p element with a brief history of the company. 
+                It is OK to use nonsense language.</strong></p>
+            </div>
+          </div>
         </section>
         
         <!-- W3 Adventure Section -->
-        <section>
+         <!-- w3 use figure elements to dispaly pictures -->
+        <section >
           <h2>Adventure Awaits You!</h2>
-          <img src="images/rafting53_600.jpg" alt="background" width ="150"> 
-          <img src="images/rafting58_600.jpg" alt="background" width ="150"> 
-          <img src="images/deercreek-portrait.jpg" alt="background" width ="150"> 
-          <img src="images/bighorn-ram.jpg" alt="background" width ="150"> 
-          <img src="images/rafting15_600.jpg" alt="background" width ="150"> 
+          <!-- w4 put pictures in flex box container and put each picture as part of a figure -->
+          <div class="flexbox-container">
+            <div class="flexbox-item">
+              <figure>
+                <img src="images/rafting53_600.jpg" alt="background" width ="150"> 
+                <figcaption>Wild Rapids</figcaption>
+              </figure>
+            </div>
+
+              <div class="flexbox-item">
+                <figure>
+                    <img src="images/deso-2kayaks.jpg" alt="background" width ="150"> 
+                  <figcaption>Kayaking</figcaption>
+               </figure>
+             </div>
+              
+              <div class="flexbox-item">
+                <figure>
+                  <img src="images/deercreek-portrait.jpg" alt="background" width ="150"> 
+                  <figcaption>Waterfalls</figcaption>
+                </figure>
+              </div>
+
+              <div class="flexbox-item">
+                <figure>
+                  <img src="images/bighorn-ram.jpg" alt="background" width ="150"> 
+                  <figcaption>Wildlife</figcaption>
+                </figure>
+              </div>
+
+              <div class="flexbox-item">
+                <figure>
+                  <img src="images/rafting15_600.jpg" alt="background" width ="150"> 
+                  <figcaption>Beginner Rafting</figcaption>
+                </figure>
+              </div>
+          </div>
         </section>
 
         <!-- <h1>About Us</h1> -->
@@ -78,14 +127,15 @@
   
     <!-- W1 Adding a footer for my page -->
     <footer>
-      <nav>
         <p>&copy; 2024 -- White Water Rafting -- Amy S. -- Texas -- USA </p>
-        <a href="https://instagram.com"> <img src="images/instagram.png" alt="Instgram" width ="20"></a>
-        <a href="https://facebook.com"> <img src="images/facebook.png" alt="Facebook" width ="20"></a>
-        <a href="https://x.com"> <img src="images/twitter.png" alt="Twitter" width ="20"></a>
-      </nav>
-
-      </footer>
+        <nav>
+          <ul class="navigation">
+            <li> <a href="https://instagram.com"> <img src="images/instagram.png" alt="Instgram" width ="20"></a> </li>
+            <li> <a href="https://facebook.com"> <img src="images/facebook.png" alt="Facebook" width ="20"></a> </li>
+            <li> <a href="https://x.com"> <img src="images/twitter.png" alt="Twitter" width ="20"></a> </li>
+          </ul>
+        </nav>
+    </footer>
   </body>
 
 </html>

@@ -35,13 +35,24 @@ body {
     text-align: center;
   }
 
+/* w4- */
 header {
-    padding: 2px;
-    text-align: center;
+    /* w4 - comment out padding, margin, and text align  */
+    /* padding: 2px; */
+    /* text-align: center; */
+    /* margin: 0 auto; */
     color: var(--primary-color);
     background-color: var(--primary-color);
-  }
 
+    /* w4 additions */
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+
+}
 main{
     padding: 10px;
 }
@@ -74,11 +85,13 @@ p {
 
 nav {
     background-color: var(--primary-color); 
-    display: inline;
+    /* display: inline; */
+    display: flex;
     line-height: 2em;
     text-align: center;
     font-size: 1.2em;
     justify-content: space-around;
+    
 }
 
 nav a {
@@ -90,46 +103,57 @@ nav a {
     /* text-decoration: none; */
 }
 
+/* nav a:hover{
+    background-color:  var(--accent2-color);
+    color: var(--primary-color);
+	font-weight: 700;
+} */
+
+
+
 /* set up styling for footer area */
 footer {
     /* height: 1px; */
-    text-align: left;
-    display:inline;
-    color: var(--accent3-color);
-    background-color: var(--primary-color);
+    /* text-align: left;
+    /* display:inline; */ 
 
-}
-footer nav {
     background-color: var(--primary-color);
-    display:inline;
-    line-height: 2em;
-    text-align: center;
-    font-size:1em;
-    justify-content: space-around;
-    /* background-color: red; */
     color: var(--accent3-color);
+ 
+    /* w4 modifications     */
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+}
+
+footer nav {
+    /* background-color: var(--primary-color);
+    color: var(--accent3-color); */
+    display: flex;
+    line-height: 2em;
+    font-size:1em;
 }
 
 footer nav a {
-    background-color: var(--primary-color); 
-    color: var(--accent2-color);
-    display: right;
-    padding: 5px;
+    /* background-color: var(--primary-color); 
+    color: var(--accent3-color); */
+    position: relative;
     text-decoration: none;
+    grid-column: 3/4;
+    display: flex;
 }
-footer nav p {
-    color: var(--accent3-color);
+
+footer p {
     background-color: var(--primary-color); 
-    text-align: left;
-
+    color: var(--accent3-color);
+    text-align: center;
+    /* position: relative; */
+    grid-column: 2/3;
+    /* grid-row: 2/3; */
 }
-
-footer img{
-    display: inline;
-    /* float: right; */
-}
-
-
 
 /* CLASS SELECTORS */
 .hero {
@@ -137,7 +161,7 @@ footer img{
 	position: relative; 
     max-width: 600px;
     background-size: 50%;
-    background-color:var(--accent2-color);
+    background-color:var(--accent1-color);
 
 }
 
@@ -164,7 +188,7 @@ footer img{
     bottom: 2%;
     right: 5px;
     color: var(--primary-color);
-    background-color:  rgba(255,255,255,0.5);
+    background: radial-gradient(#eee, var(--secondary-color));
 }
 
 .hero-image{
@@ -174,8 +198,60 @@ footer img{
 }
   
 .hero p {
-    background-color: rgba(255,255,255,0);
+    /* background-color: rgba(255,255,255,0); */
+    background: radial-gradient(#eee, var(--secondary-color),0);
+
 }
+
+
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+}
+
+/* added header navigation changes for w4*/
+.navigation {
+	display: flex;
+    grid-template-columns: 120px 1fr;
+	list-style: none;
+    
+}
+
+.navigation li {
+	/* flex: 1 1 10%; */
+    background-color: var(--primary-color); 
+    color: var(--accent2-color);
+    font-size: 1em;
+}
+
+.navigation a {
+    background-color: var(--primary-color); 
+    color: var(--accent2-color);
+
+    display: inline-block; /*block;*/
+	padding: 10px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color:  var(--accent2-color);
+    color: var(--primary-color);
+	font-weight: 700;
+}
+
+.flexbox-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+
+}
+
+.flexbox-item{
+    background-color: var(--accent2-color);
+}
+
+
 
 /* font schemes*/
 .roboto-thin {
