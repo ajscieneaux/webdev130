@@ -200,7 +200,7 @@ footer p {
 .hero p {
     /* background-color: rgba(255,255,255,0); */
     background: radial-gradient(#eee, var(--secondary-color),0);
-
+    text-align: left;
 }
 
 
@@ -242,7 +242,7 @@ footer p {
 
 .flexbox-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center; 
 
 }
