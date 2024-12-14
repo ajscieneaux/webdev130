@@ -85,7 +85,6 @@ p {
 
 nav {
     background-color: var(--primary-color); 
-    /* display: inline; */
     display: flex;
     line-height: 2em;
     text-align: center;
@@ -100,16 +99,7 @@ nav a {
     display: inline;
     margin-left: 1rem;
     padding: 10px;
-    /* text-decoration: none; */
 }
-
-/* nav a:hover{
-    background-color:  var(--accent2-color);
-    color: var(--primary-color);
-	font-weight: 700;
-} */
-
-
 
 /* set up styling for footer area */
 footer {
@@ -138,8 +128,8 @@ footer nav {
 }
 
 footer nav a {
-    /* background-color: var(--primary-color); 
-    color: var(--accent3-color); */
+    background-color: var(--primary-color); 
+    color: var(--accent3-color);
     position: relative;
     text-decoration: none;
     grid-column: 3/4;
@@ -154,6 +144,85 @@ footer p {
     grid-column: 2/3;
     /* grid-row: 2/3; */
 }
+
+/*items for contact us page  */
+legend, fieldset, label{
+    background-color: var(--accent1-color);
+}
+
+input, select, textarea{
+    font-size: 18px;
+    background-color: var(--accent2-color);
+}
+
+legend{
+    font-size: 1.2em;
+    padding: 0 10px;
+    font-style: italic;
+}
+form{
+    width: 550px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    display: grid;
+    justify-self: center;
+
+    background-color: var(--accent2-color);
+    /* color: var(--secondary-color) */
+}
+fieldset{
+    display: grid;
+    grid-gap: .75rem;
+    margin: 1rem;
+    padding: 1.2rem;
+    border: 2px solid var(--primary-color);
+    font-size: 1.2em;
+}
+fieldset p{
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+label{
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: left;
+}
+
+input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    accent-color: var(--accent2-color);
+}
+input[type="radio"]{
+    display:inline-block;
+    margin-right: 30px;
+    /* padding: 20px; */
+    width: 20px;
+    height: 20px;
+    /* vertical-align: middle; */
+    accent-color: var(--secondary-color);
+}
+button{
+    display: block;
+    margin: auto;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border: 1px solid;
+    border-radius: .5rem;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+button:hover{
+    background-color: var(--primary-color);
+    color: var(--accent2-color)
+}
+
 
 /* CLASS SELECTORS */
 .hero {
@@ -252,6 +321,26 @@ footer p {
 }
 
 
+/* w5items for form formatting */
+.form-item{
+    display: grid;
+    align-items: center;
+}
+.contact1{
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
+.contact2{
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+.contact3{
+    display: flex;
+    flex-direction: row;
+}
+.contact3 label{
+    padding-left: 10px;
+}
 
 /* font schemes*/
 .roboto-thin {

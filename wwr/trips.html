@@ -4,18 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>White Water Rafting | Trips</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/rafting.css">
+
+    <!-- get selected google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Knewave&family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    
   </head>
   <body>
     <!-- W1 Adding a header for my page -->  
     <header>
-        <nav>
-           <img src="images/wwr.png" alt="Logo" width ="50">
-           <a href="index.html">Home</a> 
-           <a href="#">Trips</a>
-           <a href="aboutus.html">About Us</a>
-           <a href="contactus.html">Contact Us</a>
-        </nav>
+      <img src="images/wwr.png" alt="Logo" width="100">
+      <!-- w4  Use CSS Flex to create the horizontal layout in the nav. -->
+      <nav >        
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
     
     <main>
@@ -27,8 +36,13 @@
   
     <!-- W1 Adding a footer for my page -->
     <footer>
-        <p>&copy; 2024 -- Amy S. -- Texas -- USA</p>
-    </footer>
-  </body>
-
+      <p>&copy; 2024 -- White Water Rafting -- Amy S. -- Texas -- USA </p>
+      <nav>
+        <ul class="navigation">
+          <li> <a href="https://instagram.com" target="_blank"> <img src="images/instagram.png" alt="Instgram" width ="20"></a> </li>
+          <li> <a href="https://facebook.com" target="_blank"> <img src="images/facebook.png" alt="Facebook" width ="20"></a> </li>
+          <li> <a href="https://x.com" target="_blank"> <img src="images/twitter.png" alt="Twitter" width ="20"></a> </li>
+        </ul>
+      </nav>
+  </footer>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD130 | Quiz Form</title>
+
+    <meta name="Description" content="Ballooning by Amy. I am trying to learn more html and css.">
+    <meta name="Author" content="Amy J">
+    <link rel="stylesheet" href="styles/quiz.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>WDD130 | Amy S | HTML Quiz Exercise</h1>
+    </header>
+    
+    <!-- main part of quiz page -->
+    <main>
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                <!-- input for full name -->
+                <!-- <div class="form-item column2"> -->
+                    <label for="fullname">Full Name:</label> 
+                    <input type="text" id="fullname" name="fullname" placeholder="First Middle Last">
+                <!-- </div> -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Quiz Questions:</legend>
+
+                <!-- question one -->
+                <label for="q1">1. What does HTML stand for?</label> 
+                <input type="text" id="q1" name="q1">
+
+                <!-- question two -->            
+                <label for="q2">2. What type of file do you use to style HTML 
+                    and how do you reference it?</label>
+                <textarea id="q2" name="q2" rows="3" cols="45" ></textarea>
+
+                <!-- question 3 -->
+                <label for="q3">3. Which  is a valid label in HTML?</label>
+                <select id="q3" name="q3">
+                    <option  value="this label">Chrome</option>
+                    <option value="that label">Edge</option>
+                    <option value="for=q4">FireFox</option>
+                    <option value="type=number">Opera</option>
+                    <option value="Safari">Safari</option>
+                    <option value="None of the above">Other</option>
+                </select>
+
+                <!-- question 4 - number input-->
+                <label for="q4">4. How many courses have you taken that required HTML and CSS?</label>
+                <input type="number" id="q4" name="q4" max="100">
+
+                <!--add a submit form button-->
+                <button type="submit">Submit Poll</button>
+            </fieldset>
+        </form>
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>

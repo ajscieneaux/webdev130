@@ -4,33 +4,127 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>White Water Rafting | Contact Us</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/rafting.css">
+
+    <!-- get selected google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Knewave&family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    
   </head>
   <body>
     <!-- W1 Adding a header for my page -->  
     <header>
-        <nav>
-          <img src="images/wwr.png" alt="Logo" width ="50">
-          <a href="index.html">Home</a> 
-          <a href="trips.html">Trips</a>
-          <a href="aboutus.html">About Us</a>
-          <a href="#">Contact Us</a>
-          
-        </nav>
+      <img src="images/wwr.png" alt="Logo" width="100">
+      <!-- w4  Use CSS Flex to create the horizontal layout in the nav. -->
+      <nav >        
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
+    
     <main>
-        <h1>Contact Us</h1>
-        <!-- <img src="images/mypic.webp" alt="Hello, my name is Amy" width ="1700"> -->
-        <p> Address:</p>
-        <p> e-mail:</p>
-        <p> Phone:</p>     
-        <p> FAX:</p>
+      <h1>CONTACT WHITEWATER RAFTING</h1>
+      <!-- w5 put happy employee pictures in flex box container  -->
+      <div class="flexbox-container">
+        <img src="images/employee1.png" alt="background" width ="150"> 
+        <img src="images/employee2.png" alt="background" width ="150"> 
+        <img src="images/employee3.png" alt="background" width ="200"> 
+      </div>
+
+      <p>You can contact us via the following methods: <br>
+        Phone: 888-888-8888 <br>
+        E-mail: wwr@domain.com <br>
+        Mail: 501 Union Ave <br>
+        Salmon, Idaho 83467  <br>
+        You can also fill out the form below.
+      </p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.6290164973075!2d-113.89844708827599!3d45.17436177095002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535835c7042299c3%3A0x13b3ccc38c3f0450!2s501%20Union%20Ave%2C%20Salmon%2C%20ID%2083467!5e0!3m2!1sen!2sus!4v1734145779540!5m2!1sen!2sus" 
+      width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form>
+        <fieldset>
+            <!-- <legend>Contact Us</legend> -->
+
+            <!-- input for full name -->
+            <div class="form-item contact1">
+              <label for="fullname">Full Name:</label> 
+              <input type="text" id="fullname" name="fullname" placeholder="First Middle Last">
+            </div>
+            <!-- email input -->
+            <div class="form-item contact1">
+              <label for="email">e-Mail:</label> 
+              <input type="text" id="email" name="email">
+            </div>
+            <!-- sign up for newsletter -->
+            <!-- checkbox for if have household pet-->
+            <div class="form-item contact2">
+              <label for="news"> Please subscribe me to the monthly newsletter.</label>
+              <input type="checkbox" id="news" name="news">
+            </div>
+
+
+        </fieldset>
+
+        <fieldset>
+          <!-- type of inquiry -->
+          <p>Please select your inquiry type:</p>
+          <div class="form-item contact3">
+            <input type="radio" id="genq" name="inq_type" value="genq">
+            <label for="genq">General Inquiry</label><br>
+          <!-- </div> -->
+          <!-- <div class="form-item contact3"> -->
+            <input type="radio" id="resevationq" name="inq_type" value="resevationq">
+            <label for="resevationq">Reservation Question</label><br>
+          <!-- </div> -->
+          <!-- <div class="form-item contact3"> -->
+            <input type="radio" id="websuggest" name="inq_type" value="websuggest">
+            <label for="websuggest">Website Suggestion</label><br><br>
+          </div>
+
+                      <!-- What type of trip are you interested in-->
+            <br>
+            <label for="triptype">Which type of adventure are you interested in?</label>
+            <select id="triptype" name="triptype">
+              <option  selected value> -- select an option -- </option>
+              <option value="Half">Half Day Rapids Adventure</option>
+              <option value="Full">Full Day Rapids Adventure</option>
+              <option value="Night">Rapids and Over Night Adventure</option>
+              <option value="Kayak">Kayaking Adventure</option>
+              <option value="Hiking">Hiking Adventure</option>
+              <option value="Multiple">Multiple Adventures</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <!-- What questions do you have -->            
+            <label for="question">Please tell us what information you would like:</label>
+            <textarea id="question" name="question" rows="5" cols="45" ></textarea>
+          
+            <!--add a submit form button-->
+            <button type="submit">Send Contact Request</button>
+        </fieldset>
+      </form>
+
     </main>
   
     <!-- W1 Adding a footer for my page -->
     <footer>
-        <p>&copy; 2024 -- Amy S. -- Texas -- USA</p>
+      <p>&copy; 2024 -- White Water Rafting -- Amy S. -- Texas -- USA </p>
+        <nav>
+          <ul class="navigation">
+            <li> <a href="siterafting.html"> <img src="images/wwr-wireframe-contactus.png" alt="SitePlan" width="30"> </a> </li>
+
+            <li> <a href="https://instagram.com" target="_blank"> <img src="images/instagram.png" alt="Instgram" width ="30"></a> </li>
+            <li> <a href="https://facebook.com" target="_blank"> <img src="images/facebook.png" alt="Facebook" width ="30"></a> </li>
+            <li> <a href="https://x.com" target="_blank"> <img src="images/twitter.png" alt="Twitter" width ="30"></a> </li>
+          </ul>
+        </nav>
     </footer>
+  
   </body>
 
 </html>
