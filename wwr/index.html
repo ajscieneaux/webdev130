@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>White Water Rafting | Home</title>
+    <title>WhiteWater Rafting | Home</title>
     <link rel="stylesheet" href="styles/rafting.css">
 
     <!-- get selected google fonts-->
@@ -21,8 +21,8 @@
       <nav >        
         <ul class="navigation">
           <li><a href="index.html">Home</a></li>
-          <li><a href="trips.html">Trips</a></li>
           <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
           <li><a href="contactus.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -30,17 +30,64 @@
 
     <!-- W1 Adding my name and a little bit about me in the main part of page-->
     <main>
-        <h1>White Water Rafting - Home</h1>
-        <!-- <img src="images/mypic.webp" alt="Hello, my name is Amy" width ="1700"> -->
-        <p> The home page will contain some attention grabbing information including 
-          company information, call(s) to action, appealing graphics, and other items.</p>
-        <!-- add an unordered list and use caveat font-->
-        <ul><span class="caveat-brush-regular">
-          <li>Rivers</li>
-          <li>Camping</li>
-          <li>Rapids</li>
-        </span>
-        </ul>
+      <h1>WhiteWater Rafting - Home</h1>
+
+      <!-- full hero image with heading message-->
+      <div class="hero2">
+          <img src="images/hero2.jpg" alt="home background" width="1000">
+          <h1>Have An Adventure <br> with WhiteWater Rafting</h1>
+      </div>
+
+      <!-- Add tagline verbiage as to what our company provides and   -->
+      <section>
+        <div class ="flexbox-container2">
+          <div class = "flexbox-item2">
+            <h1> Let our years of experience help bring excitement and wonder to your life.</h1>             
+          </div>
+          <div class = "flexbox-item2">
+            <h1> We provide individual, family, team and other group adventures.</h1>
+          </div>
+        </div>
+
+        <br><br>
+        <label for="news"> Subscribe to our monthly newsletter.</label>
+        <input type="checkbox" id="news" name="news">
+        <br><br>
+      </section>
+
+
+      <!-- display pictures of rivers, camping and rapids -->
+      <section >
+        <div class="flexbox-container">
+          <div class="flexbox-item">
+            <figure>
+              <img src="images/rivers.jpg" alt="background" width ="150"> 
+              <figcaption>Rivers</figcaption>
+            </figure>
+          </div>
+
+            <div class="flexbox-item">
+              <figure>
+                  <img src="images/camping.jpg" alt="background" width ="150"> 
+                <figcaption>Camping</figcaption>
+              </figure>
+            </div>
+            
+            <div class="flexbox-item">
+              <figure>
+                <img src="images/rapids.jpg" alt="background" width ="150"> 
+                <figcaption>Rapids</figcaption>
+              </figure>
+            </div>
+        </div>
+      </section>
+      <br>
+
+      <!--put button in linking to the trips page to get booking information  -->
+      <div class='button-box'>
+        <a class='book' href="trips.html">Check Out Our Trips Now!</a>
+      </div>
+
     </main>
   
     <!-- W1 Adding a footer for my page -->
@@ -53,7 +100,7 @@
           <li> <a href="https://x.com" target="_blank"> <img src="images/twitter.png" alt="Twitter" width ="20"></a> </li>
         </ul>
       </nav>
-  </footer>
+    </footer>
   
   </body>
 </html>
